@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=600">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=300,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Elutia Inc. — Investor Relations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600;700;800&amp;family=Karla:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  Elutia Inc. — IR display banner, 300x600 — Concept D: Corporate site / brand-native.
+  Promotes: https://ir-landing-concepts.netlify.app/elutia/
+  Styled from the company's own CORPORATE website (https://elutia.com/), not the IR
+  landing page that Concepts A-C are built from: its white header + logo
+  lockup, heading/body fonts, palette, accent underline bars, button style
+  and footer strip. "Homepage in miniature": each slide is one module of the
+  corporate homepage, alternating photo and light grounds. This build uses elutia.com's modules: 1 hero -> 2 mission block -> 3 product box -> 4 steel-blue band.
+  Module classes (m-hero / m-stats / m-split / m-band) and the shared parts
+  (d-stat, d-list, d-arrows) live in style.css; every colour is a :root token
+  filled from brand.json "corp". Re-module a slide if the site has no such
+  module. Photos are the site's own photography, cropped into assets/;
+  assets/logo.svg is the site's own logo file. Every claim comes from the
+  project fact sheet (.tmp/facts.md).
+-->
+
+<div id="banner" aria-label="Elutia Inc. investor relations advertisement">
+
+  <div id="slides">
+
+    <!-- Slide 1 — Overview -->
+    <section class="slide e-hero" data-index="0">
+      <!-- Module: elutia.com homepage hero (Revolution Slider): green + navy Overpass headline, the B/W portrait
+           in a pale-blue circle, the white curved swoosh behind. Facts: facts.md matrix 1 ($1.5B company est.). -->
+      <img class="e-swoosh" src="assets/swoosh.jpg" alt="">
+      <figure class="e-circle"><img src="assets/portrait-1.jpg" alt="Illustrative image: a smiling woman at home"><figcaption>Illustrative image</figcaption></figure>
+      <div class="e-copy">
+        <h2><span class="g">Thrive Without Compromise.</span> Built to Stop Surgical Infection.</h2>
+        <p>NXT-41x is an investigational antibiotic-eluting biomatrix for plastic and reconstructive surgery.</p>
+        <div class="d-stats">
+          <div class="d-stat"><p class="d-value">~$1.5B</p><p class="d-label">U.S. plastic &amp; reconstructive surgery market (company estimate)</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 2 — The unmet need -->
+    <section class="slide e-mission" data-index="1">
+      <!-- Module: elutia.com "Our Mission" block: green eyebrow, large navy Overpass statement, on the swoosh.
+           Facts: Q3 2026 release (ASPS PSTM 2026, independent investigators). -->
+      <img class="e-swoosh" src="assets/swoosh.jpg" alt="">
+      <div class="e-copy">
+        <p class="e-eyebrow">The Unmet Need</p>
+        <h2>Infection came up in all 11 breast research sessions.</h2>
+        <p>At the American Society of Plastic Surgeons&rsquo; 2026 meeting, independent investigators reported:</p>
+        <div class="d-stats">
+          <div class="d-stat"><p class="d-value">Up to 23%</p><p class="d-label">Serious infection rates reported in breast surgery</p></div>
+          <div class="d-stat"><p class="d-value">70 <span class="d-vs">of</span> 135</p><p class="d-label">Oral research presentations that addressed infection</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 3 — Preclinical data -->
+    <section class="slide e-products" data-index="2">
+      <!-- Module: elutia.com "Bridging the Gap" heading + the green-bordered product box (line icon, navy pill
+           labels, centred grey copy). Facts: Q3 2026 release, GLP rabbit study (preclinical). -->
+      <div class="e-copy">
+        <h2><span class="g">Bridging the Gap:</span> Drugs, Devices and Biomatrices.</h2>
+        <div class="e-box">
+          <img class="e-icon" src="assets/ICON7.png" alt="">
+          <p class="e-box-title">GLP Rabbit Study (Preclinical)</p>
+          <div class="e-pills"><span>8-log MRSA</span><span>6-log E. coli</span></div>
+          <p class="e-box-text">NXT-41x met its prespecified endpoints: no viable bacteria recovered after either challenge. Animal data, not human results.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 4 — Road to launch -->
+    <section class="slide e-band" data-index="3">
+      <!-- Module: elutia.com steel-blue "Digital Education" band (#365e84): green eyebrow, white Overpass heading,
+           white copy; the portrait circle stands in for the band's line illustration.
+           Facts: Q3 2026 release milestone table and cardiovascular results. -->
+      <figure class="e-circle sm"><img src="assets/portrait-2.jpg" alt="Illustrative image: a grandfather and grandson embracing"><figcaption>Illustrative image</figcaption></figure>
+      <div class="e-copy">
+        <p class="e-eyebrow">Road to Launch</p>
+        <h2>NXT-41x FDA Submission Planned for Q4 2026</h2>
+        <ul class="e-steps">
+          <li><b>4Q 2026</b> NXT-41 (matrix without drug) clearance decision</li>
+          <li><b>1H 2027</b> NXT-41x clearance decision targeted</li>
+          <li><b>2H 2027</b> Soft launch; full launch in 2028</li>
+        </ul>
+        <div class="d-stats">
+          <div class="d-stat"><p class="d-value">+20%</p><p class="d-label">Cardiovascular sales, Q3 2026 ($1.1M)</p></div>
+          <div class="d-stat"><p class="d-value">80%+</p><p class="d-label">Target gross margin at scale</p></div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Persistent chrome — the corporate site's header, never rotates -->
+  <header id="top-bar" class="reveal" data-delay="0">
+    <img id="logo" src="assets/logo.png" alt="Elutia Inc." width="127" height="28">
+    <span id="ticker">Nasdaq:&nbsp;ELUT</span>
+  </header>
+
+  <!-- Slider controls: round pill-blue buttons, like the site's pill buttons -->
+  <button type="button" class="nav-arrow" id="arrow-prev" aria-label="Previous slide">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 6 8l4 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button type="button" class="nav-arrow" id="arrow-next" aria-label="Next slide">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l4 5-4 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div id="bottom-fixed" class="reveal" data-delay="4">
+    <div id="dots" role="tablist" aria-label="Slide selector">
+      <button class="dot active" data-index="0" aria-label="Slide 1: Overview"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2: The unmet need"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3: Preclinical data"></button>
+      <button class="dot" data-index="3" aria-label="Slide 4: Road to launch"></button>
+    </div>
+
+    <!-- The corporate site's .btn: radius/gradient border from brand.json corp, arrow after the label -->
+    <a href="#" id="cta">
+      <span>For Investors</span>
+      <svg id="cta-arrow" viewBox="0 0 24 25" aria-hidden="true"><path d="M12 4.18066L10.585 5.59566L16.17 11.1807H4V13.1807H16.17L10.585 18.7657L12 20.1807L20 12.1807L12 4.18066Z"/></svg>
+    </a>
+
+    <!-- The corporate site's footer strip, carrying the required forward-looking-statements line -->
+    <p id="fls"><span>NXT-41x is investigational and not FDA-cleared. Timelines, market size and margin are company targets and forward-looking; see SEC filings for risk factors.</span></p>
+  </div>
+
+  <!-- Standard HTML5-ad click-tag plumbing -->
+  <div id="click-tag-wrapper"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
